@@ -1,5 +1,6 @@
 //let apiDomain = 'https://terabox-downloader-api-src-buoe.onrender.com'
-let apiDomain = "http://127.0.0.1:3000"
+//let apiDomain = "http://127.0.0.1:3000"
+let apiDomain = "https://tb-old-api-crystal.onrender.com"
 let dir_root = document.getElementById("dir_root")
 let sr = ScrollReveal()
 document.getElementById("submit_btn").addEventListener("click", async () => {
