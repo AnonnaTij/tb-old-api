@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+  </style>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+  <link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="keywords" content="Terabox, Terabox downloader, file downloader, download files, file access, video downloader, streaming, fast downloads, user-friendly downloader, intuitive tool, efficient downloads, file management, Terabox files, online downloader, cloud storage, file saving, Terabox videos, easy downloads, seamless file access, reliable downloader, Terabox streaming, download manager, high-speed downloads, Terabox cloud, download tool, file transfer, media downloader, file retrieval, Terabox content, download software, secure downloads, Terabox music, download application, file utility, Terabox documents, video streaming, quick downloads, Terabox access, download platform, cloud files, Terabox media, file extraction, online streaming, Terabox videos download, easy file access, Terabox download service, file hosting, streaming videos, download from Terabox, Terabox app, video files, Terabox website, Terabox tool, fast file downloader, download helper, Terabox cloud storage, Terabox utility, file downloader tool, online file downloader, media access, Terabox media downloader, download files from Terabox, file saving tool, Terabox file management, quick file downloads, file downloader application, Terabox content downloader, file transfer tool, download videos from Terabox, Terabox media access, file downloader platform, cloud storage downloader, Terabox file retrieval, efficient file downloader, Terabox document access, high-speed file downloader, Terabox music downloader, reliable file downloader, file access tool, Terabox media platform, online file access, download manager for Terabox, Terabox video access, file download software, Terabox content access, seamless downloads, Terabox file transfer, online file manager, Terabox download utility, download service for Terabox, file management tool, Terabox online downloader">
+  <meta name="description" content="Swiftly and effortlessly download files from Terabox with our intuitive and user-friendly tool. Experience seamless and reliable file access today.">
+  <meta name='subject' content="Terabox Downloader">
+  <meta name='topic' content='downloader'>
+  <meta name='language' content='EN'>
+  <meta name='pagename' content="Home Page">
+  <meta name='og:title' content='Terabox Downloader'>
+  <meta name='og:description' content="Swiftly and effortlessly download files from Terabox with our intuitive and user-friendly tool. Experience seamless and reliable file access today.">
+
+  
+   
+     <title>Terab0x</title>
+</head>
+
+<body>
+  <div class="fixed -top-[20px] -left-[20px] bg-[green] h-[100px] w-[100px] z-[-1] blur-[100px]">o</div>
+  <div id="overlay" class="hidden fixed top-0 left-0 w-full h-full z-9998" onclick="invalidErrorShow(false)"></div>
+  <div id="popup" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded-lg p-2 w-9/12 z-[9999] transition-opacity duration-500">
+    <p id="popText" class="text-center text-white text-full w-full font-mono"></p>
+    <button class="bg-[green] text-white py-2.5 px-5 rounded-xl font-mono transition-all duration-500 ease-in-out hover:bg-green-700" onclick="invalidErrorShow(false)">Close</button>
+  </div>
+  <div id="loading_bg">
+    <lottie-player src="https://lottie.host/6931f1cc-7473-4e2a-83bf-b62814df95ff/GToHltETMr.json" background="transparent" speed="1" loop autoplay></lottie-player>
+  </div>
+  <div class="text-container">
+    <span id="terabox">Terabox</span> <span id="animated-text">Downloader</span>
+  </div>
+  <p class="animation-container">
+  Terab0x: Downloader, Video Player, Search Engine. Simplify file access effortlessly. [By GitHub: @jinix6]
+</p>
+  <div method="post">
+    <div class="search-bar">
+      <input value="" type="text" id="url-input" placeholder="Enter url or keyword Here">
+      <button id="pasteBtn" type="button">Paste</button>
+    </div>
+    <div class="center">
+      <button id="submit_btn" type="button">Search</button>
+    </div>
+  </div>
+  <div id="dir_root"></div>
+  <p id="log"></p>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+ 
+<script src="{{ url_for('static', filename='loom.js') }}"></script>
+  
+  
+</body>
+
+</html>
